@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*estilos generales */
+
+body{
+    background-color: rgb(238, 210, 174);
+    font-family: 'Courgette';
+}
+
+/* estilos del header */
+
+header{
+    background-color: rgb(233, 190, 133);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+header h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+header nav ul{
+    display: flex;
+    
+}
+
+header nav ul li{
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+}
+
+/* estilo redes */
+
+.redesEstilo{
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 1rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+/* estilos parrafos */
+
+.estilosP{
+    margin: 1rem;
+    font-size: 1.8rem;
+    font-family: var();
+    text-decoration: underline;
+}
+
+.estiloPDos{
+    color: rgb(93, 90, 90);
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: none;
+    font-family: Reboto, cursive;
+}
+
+.footer{
+    font-size: 0.2rem;
+    font-family: cursive;
+}
+
+/* estilo cartas */
+
+.estiloCard{
+    background-color: darkseagreen;
+}
+
+.cartas{
+    margin: 2rem;
+}
+
+/*estilo horarios */ 
+
+.horarios{
+    background-color: darkgrey;
+    font-size: 1rem;
+    color: black;
+}
+
+
+/* estilo mapa */
+
+.map{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+   
+}
+
+/* estilo contactanos */
+
+.lista{
+    margin: 1rem;
+}
+
+.formPDos{
+    color: whitesmoke;
+    background-color: darkblue;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+/* estilo home */
+
+.Home{
+    color: whitesmoke;
+    background-color: black;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.estiloImg{
+    width: 400px;
+}
