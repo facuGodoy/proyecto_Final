@@ -13,14 +13,17 @@ body{
 /* estilos del header */
 
 header{
-    background-color: rgb(233, 190, 133);
+    height: 45rem;
+    background-image: url(/img/nuevaportada.jpg);
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: initial;
     
 }
 
+
 header h1{
+    color: #FEDBAC;
     text-align: center;
     text-transform: capitalize;
 }
@@ -39,9 +42,36 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color: black;
+    color: #FEDBAC;
     text-decoration: none;
     text-transform: none;
+}
+
+/* trasformaciones del index */
+
+header nav ul li:hover{
+    transform: scale(1.2);
+    transition: 2s;
+    
+}
+
+header nav ul li a:hover{
+    color: #FCB65A;
+}
+
+.boton:hover{
+    transform:scale(1.3);
+    transition: 1s;
+    color: black;
+    background-color: #FEE9CD;
+    border: 0.1rem solid black;
+    
+
+}
+
+.card:hover{
+    transform: scale(1.3);
+    transition: 3s;
 }
 
 /* estilo redes */
@@ -57,6 +87,7 @@ header nav ul li a{
 /* estilos parrafos */
 
 .estilosP{
+    text-align: center;
     margin: 1rem;
     font-size: 1.8rem;
     font-family: var();
@@ -65,10 +96,12 @@ header nav ul li a{
 
 .estiloPDos{
     color: rgb(93, 90, 90);
-    font-size: 1.1rem;
+    margin: 1rem;
+    text-align: center;
     text-decoration: none;
     text-transform: none;
     font-family: Reboto, cursive;
+    font-size: 1.1rem;
 }
 
 .footer{
@@ -86,16 +119,18 @@ header nav ul li a{
     margin: 2rem;
 }
 
-/*estilo horarios */ 
+
+
+/* Estilo horarios */ 
 
 .horarios{
-    background-color: darkgrey;
+    background-color: darkred;
     font-size: 1rem;
-    color: black;
+    color: whitesmoke;
 }
 
 
-/* estilo mapa */
+/* Estilo mapa */
 
 .map{
     margin-top: 5rem;
@@ -103,22 +138,10 @@ header nav ul li a{
    
 }
 
-/* estilo contactanos */
-
-.lista{
-    margin: 1rem;
-}
-
-.formPDos{
-    color: whitesmoke;
-    background-color: darkblue;
-    border-radius: 1rem;
-    padding: 0.2rem;
-}
-
 /* estilo home */
 
 .Home{
+    justify-content: end;
     color: whitesmoke;
     background-color: black;
     margin: 1rem;
@@ -129,5 +152,345 @@ header nav ul li a{
 }
 
 .estiloImg{
-    width: 400px;
+    width: 200px;
+}
+
+/* Estilos de redes */
+
+.redes{
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+
+.botonEstilo{
+    background-color: pink;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+
+}
+
+.redesSociales{
+    color: black;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+}
+
+
+/* Estilo productos */
+
+.imgProductos{
+    height: 30rem;
+    width: auto;
+    margin-top: 1rem;
+}
+
+.productosHDos{
+    font-size: 1.5rem;
+    font-family: cursive;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+/* Grid productos */
+
+.derechos{
+    display: flex;
+    justify-content: end;
+}
+
+.imgBrillo, .imgDelineador ,.imgRubor{
+    display: flex;
+    justify-content: center;
+}
+
+.productosHDos{
+    text-decoration: underline;
+    font-size: 2rem;
+    font-family: cursive;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.textBrillo, .textPUno, .textRubor, .textP{
+    font-size: 1.2rem;
+    font-family: 'Reboto';
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.meinProductos{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "productosHDos"
+                         "textoPUno textoPUno"
+                         "imgDelineador imgDelineador"
+                         "textP textP"
+                         "imgRubor imgRubor"
+                         "textRubor textRubor"
+                         "imgBrillo imgBrillo"
+                         "textBrillo textBrillo";
+}
+
+.productosHDos{
+    grid-area: productosHDos;
+    text-align: center;
+}
+
+.textPUno{
+    grid-area: textPUno;
+    text-align: center;
+}
+
+.imgDelineador{
+    grid-area: imgDelineador;
+}
+
+.textP{
+    grid-area: textP;
+    text-align: center;
+}
+
+.imgRubor{
+    grid-area: imgRubor;
+}
+
+.textRubor{
+    grid-area: textRubor;
+    text-align: center;
+}
+
+.imgBrillo{
+    grid-area: imgBrillo;
+}
+
+.textBrillo{
+    grid-area: textBrillo;
+    text-align: center;
+}
+
+/* Grid conocenos */
+
+
+.mainConocenos{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "meinHDos"
+                         "meinP meinP"
+                         "imgTrabajo"
+                         "meinHTres meinHTres"
+                         "meinP mainP"
+                         "imgLugar"
+                         "horarios"
+                         "redes"
+                         "home derechos";
+}
+
+.imgTrabajo, .imgLugar{
+    display: flex;
+    justify-content: center;
+}
+
+.imgEquipoUno, .imgEquipoDos{
+    height: 45rem;
+    margin: 2rem;
+}
+
+.derecho{
+    justify-content: end;
+}
+
+.horarios{
+    justify-content: right;
+}
+
+.meinHDos, .meinHTres{
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin: 0.5rem;
+}
+
+.meinP{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'reboto', cursive;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.horarios{
+    margin: 0.4rem;
+}
+
+
+/* Grid contactanos */
+
+
+.contactanos{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "hDos"
+                         "pConsul pConsul"
+                         "formulario";
+}
+
+.hDos{
+    font-size: 2rem;
+    font-family: cursive;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.pConsul{
+    font-size: 1.2rem;
+    font-family: 'Reboto';
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.estiloF{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.formPar{
+    font-size: 1.2rem;
+    font-family: cursive;
+    text-transform: capitalize;
+    margin: 0.5rem;
+}
+
+.consultaF{
+    height: 8rem;
+    width: 50rem;
+    margin: 0.5rem;
+}
+
+.botonContac{
+    background-color: #362a89;
+    color: #F6F3FF;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+/* Grid de galeria */
+
+.mainGaleria{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "galeria"
+                         "galeriaP galeriaP"
+                         "galeriaUno"
+                         "galeriaDos"
+                         "galeriaTres";
+    
+}
+
+.galeria{
+    grid-area: galeria;
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.galeriaP{
+    grid-area: galeriaP;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Reboto', cursive;
+}
+
+.galeriaUno{
+    grid-area: galeriaUno;
+    display: flex;
+    padding: 5px;
+
+}
+
+.galeriaDos{
+    grid-area: galeriaDos;
+    display: flex;
+    padding: 5px;
+}
+
+.galeriaTres{
+    grid-area: galeriaTres;
+    display: flex;
+    padding: 5px;
+}
+
+.diseñoImg{
+    height: 30rem;
+}
+
+.diseño{
+    flex: 30%;
+}
+
+/* Arranca media de mobile */
+
+@media only screen and (max-width:600px){
+    .meinProyecto{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "productosHDos"
+                             "textoPUno textoPUno"
+                             "textP textP"
+                             "imgDelineador imgDelineador";
+    }
+    .textRubor, .imgRubor{
+        display: none;
+    }
+
+    /* Media de conocenos*/
+
+    .mainConocenos{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "meinHTres"
+                             "meinP meinP"
+                             "imgLugar imgLugar";
+    }
+    .meinHDos, .meinP, .imgTrabajo{
+        display: none;
+    }
+
+    /* Media de galeria*/
+
+    .container{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "galeria"
+                             "galeriaP galeriaP"
+                             "galeriaUno";
+    }
+
+    .galeriaDos, .galeriaTres{
+        display: none;
+    }
+
+    /* Media de contactanos */
+    
+    .contactanos{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "hDos"
+                             "pConsul"
+                             "formulario";
+    }
+
 }
