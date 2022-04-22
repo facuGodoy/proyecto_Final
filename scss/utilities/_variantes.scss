@@ -1,0 +1,42 @@
+//colores
+
+$colorPrincipal: black;
+$colorSecundario: whitesmoke;
+$colores: pink, #362a89,#F6F3FF,darkred,darkseagreen,#FEE9CD;
+
+// Texto
+
+$textoPrincipal: "Reboto" ;
+
+// Trasformasiones
+
+$hover: transform scale(1.2), transition 2s;
+
+// Mixin
+
+@mixin space($margin,$padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin size ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin text ($fontS, $fontF) {
+    font-size: $fontS;
+    font-family: $fontF;
+}
+
+@mixin transform ($decoration,$trasform) {
+    text-decoration: $decoration;
+    text-transform: $trasform;
+}
+
+// Extend
+
+%flexCenter{
+    display: flex;
+    justify-content: center;
+}

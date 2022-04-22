@@ -1,0 +1,303 @@
+@charset "UTF-8";
+.productosHDos, .imgBrillo, .imgDelineador, .imgRubor, .imgTrabajo, .imgLugar {
+  display: flex;
+  justify-content: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #eed2ae;
+  font-family: 'Courgette'; }
+  body header {
+    height: 45rem;
+    background-image: url(/img/nuevaportada.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: initial; }
+    body header h1 {
+      color: #FEDBAC;
+      text-align: center;
+      text-transform: capitalize; }
+    body header nav {
+      display: flex;
+      justify-content: space-around; }
+      body header nav ul {
+        display: flex; }
+        body header nav ul li {
+          list-style: none;
+          margin: 0.5rem;
+          padding: 1rem;
+          font-size: 1.5rem;
+          text-decoration: underline; }
+          body header nav ul li a {
+            color: #FEDBAC;
+            text-decoration: none;
+            text-transform: none; }
+
+/* trasformasiones del index */
+.estiloMenu:hover {
+  color: #FCB65A; }
+
+.boton:hover {
+  transform: scale(1.3);
+  transition: 1s;
+  color: black;
+  background-color: #FEE9CD;
+  border: 0.1rem solid black; }
+
+.card:hover {
+  transform: scale(1.3);
+  transition: 3s; }
+
+/* estilo redes */
+.redesEstilo {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 1rem;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem; }
+
+/* estilos parrafos */
+.estilosP {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.8rem;
+  font-family: var();
+  text-decoration: underline; }
+
+.estiloPDos {
+  color: #5d5a5a;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  font-family: Reboto, cursive;
+  font-size: 1.1rem; }
+
+/* estilo cartas */
+.estiloCard {
+  background-color: darkseagreen; }
+
+.cartas {
+  margin: 2rem; }
+
+/* Estilo horarios */
+.horarios {
+  background-color: darkred;
+  font-size: 1rem;
+  color: whitesmoke; }
+
+/* Estilo mapa */
+.map {
+  margin-top: 5rem;
+  margin-bottom: 1rem; }
+
+/* estilo home */
+.Home {
+  justify-content: end;
+  color: whitesmoke;
+  background-color: black;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-family: cursive; }
+
+/* Estilos de redes */
+.redes {
+  display: flex;
+  justify-content: space-evenly; }
+
+.botonEstilo {
+  background-color: pink;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  border: 0.1rem solid black; }
+
+.redesSociales {
+  color: black;
+  font-size: 1rem;
+  font-family: "Times New Roman";
+  text-decoration: none;
+  text-transform: none;
+  text-align: center; }
+
+/* Estilo productos */
+.imgProductos {
+  width: auto;
+  height: 30rem;
+  margin-top: 1rem; }
+
+.productosHDos {
+  font-size: 1.5rem;
+  font-family: cursive;
+  text-decoration: underline;
+  text-transform: capitalize; }
+
+/* Grid productos */
+.derechos {
+  display: flex;
+  justify-content: end; }
+
+.productosHDos {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-family: cursive;
+  margin: 0.5rem;
+  padding: 0.5rem; }
+
+.textBrillo, .textPUno, .textRubor, .textP {
+  font-size: 1.2rem;
+  font-family: Reboto;
+  margin: 0.5rem;
+  padding: 0.5rem; }
+
+.meinProductos {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "productosHDos" "textoPUno textoPUno" "imgDelineador imgDelineador" "textP textP" "imgRubor imgRubor" "textRubor textRubor" "imgBrillo imgBrillo" "textBrillo textBrillo"; }
+
+.productosHDos {
+  grid-area: productosHDos;
+  text-align: center; }
+
+.textPUno {
+  grid-area: textPUno;
+  text-align: center; }
+
+.imgDelineador {
+  grid-area: imgDelineador; }
+
+.textP {
+  grid-area: textP;
+  text-align: center; }
+
+.imgRubor {
+  grid-area: imgRubor; }
+
+.textRubor {
+  grid-area: textRubor;
+  text-align: center; }
+
+.imgBrillo {
+  grid-area: imgBrillo; }
+
+.textBrillo {
+  grid-area: textBrillo;
+  text-align: center; }
+
+/* Grid conocenos */
+.mainConocenos {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "meinHDos" "meinP meinP" "imgTrabajo" "meinHTres meinHTres" "meinP mainP" "imgLugar" "horarios"; }
+
+.imgEquipoUno, .imgEquipoDos {
+  height: 45rem;
+  margin: 2rem; }
+
+.meinHDos, .meinHTres {
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive;
+  text-decoration: underline;
+  text-transform: capitalize;
+  margin: 0.5rem; }
+
+.meinP {
+  text-align: center;
+  font-size: 1rem;
+  font-family: Reboto cursive;
+  margin: 0.5rem;
+  padding: 0.5rem; }
+
+.horarios {
+  margin: 0.4rem; }
+
+/* Grid contactanos */
+.contactanos {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "hDos" "pConsul pConsul" "formulario"; }
+
+.hDos {
+  font-size: 2rem;
+  font-family: cursive;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: underline;
+  text-align: center; }
+
+.pConsul {
+  font-size: 2rem;
+  font-family: Reboto;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center; }
+
+.estiloF {
+  border: 1px solid black;
+  padding: 0.5rem; }
+
+.formPar {
+  font-size: 1.2rem;
+  font-family: cursive;
+  text-transform: capitalize;
+  margin: 0.5rem; }
+
+.consultaF {
+  width: 50rem;
+  height: 8rem;
+  margin: 0.5rem; }
+
+.botonContac {
+  background-color: #362a89;
+  color: #F6F3FF;
+  border-radius: 1rem;
+  padding: 0.2rem; }
+
+/* Grid de galeria */
+.mainGaleria {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "galeria" "galeriaP galeriaP" "galeriaUno" "galeriaDos" "galeriaTres"; }
+
+.galeria {
+  grid-area: galeria;
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive;
+  text-decoration: underline;
+  text-transform: capitalize;
+  margin: 0.5rem;
+  padding: 0.5rem; }
+
+.galeriaP {
+  grid-area: galeriaP;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Reboto cursive; }
+
+.galeriaUno {
+  grid-area: galeriaUno;
+  display: flex;
+  padding: 5px; }
+
+.galeriaDos {
+  grid-area: galeriaDos;
+  display: flex;
+  padding: 5px; }
+
+.galeriaTres {
+  grid-area: galeriaTres;
+  display: flex;
+  padding: 5px; }
+
+.diseñoImg {
+  height: 30rem; }
+
+.diseño {
+  flex: 30%; }
