@@ -127,7 +127,7 @@ body{
    
 }
 
-/* estilo home */
+/* estilo home y footer */
 
 .Home{
     justify-content: end;
@@ -137,6 +137,12 @@ body{
     padding: 0.5rem;
     border-radius: 1rem;
    @include text (0.8rem,cursive);
+}
+
+.derechos{
+    display: flex;
+    justify-content: end;
+
 }
 
 /* Estilos de redes */
@@ -176,10 +182,6 @@ body{
 }
 /* Grid productos */
 
-.derechos{
-    display: flex;
-    justify-content: end;
-}
 
 .imgBrillo, .imgDelineador ,.imgRubor{
     @extend %flexCenter;

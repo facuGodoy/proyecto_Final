@@ -95,7 +95,7 @@ body {
   margin-top: 5rem;
   margin-bottom: 1rem; }
 
-/* estilo home */
+/* estilo home y footer */
 .Home {
   justify-content: end;
   color: whitesmoke;
@@ -105,6 +105,10 @@ body {
   border-radius: 1rem;
   font-size: 0.8rem;
   font-family: cursive; }
+
+.derechos {
+  display: flex;
+  justify-content: end; }
 
 /* Estilos de redes */
 .redes {
@@ -138,10 +142,6 @@ body {
   text-transform: capitalize; }
 
 /* Grid productos */
-.derechos {
-  display: flex;
-  justify-content: end; }
-
 .productosHDos {
   text-decoration: underline;
   font-size: 1.5rem;
