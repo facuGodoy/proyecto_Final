@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "ms-vsliveshare.vsliveshare",
+        "ritwickdey.live-sass",
+        "yandeu.five-server",
+        "glenn2223.live-sass",
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "oderwat.indent-rainbow",
+        "jock.svg",
+        "zhuangtongfa.Material-theme"
+    ]
+}

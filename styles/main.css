@@ -13,7 +13,7 @@ body {
   font-family: 'Courgette'; }
   body header {
     height: 45rem;
-    background-image: url(/img/nuevaportada.jpg);
+    background-image: url(../img/nuevaportada.jpg);
     display: flex;
     justify-content: space-around;
     align-items: initial; }
@@ -39,13 +39,13 @@ body {
 
 /* trasformasiones del index */
 .estiloMenu:hover {
-  color: #FCB65A; }
+  color: #E0D0C1; }
 
 .boton:hover {
   transform: scale(1.3);
   transition: 1s;
   color: black;
-  background-color: #FEE9CD;
+  background-color: #DBC7B8;
   border: 0.1rem solid black; }
 
 .card:hover {
@@ -65,7 +65,7 @@ body {
   text-align: center;
   margin: 1rem;
   font-size: 1.8rem;
-  font-family: var();
+  font-family: 'Dancing Script';
   text-decoration: underline; }
 
 .estiloPDos {
@@ -74,8 +74,8 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: none;
-  font-family: Reboto, cursive;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  font-family: Reboto cursive; }
 
 /* estilo cartas */
 .estiloCard {
@@ -95,20 +95,12 @@ body {
   margin-top: 5rem;
   margin-bottom: 1rem; }
 
-/* estilo home y footer */
-.Home {
-  justify-content: end;
-  color: whitesmoke;
-  background-color: black;
-  margin: 1rem;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-size: 0.8rem;
-  font-family: cursive; }
-
+/* estilo footer */
 .derechos {
   display: flex;
-  justify-content: end; }
+  justify-content: end;
+  font-size: 0.1rem;
+  font-family: Reboto; }
 
 /* Estilos de redes */
 .redes {
@@ -209,7 +201,7 @@ body {
 
 .meinP {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: Reboto cursive;
   margin: 0.5rem;
   padding: 0.5rem; }
