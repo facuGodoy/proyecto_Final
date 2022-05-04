@@ -1,0 +1,29 @@
+/* Estilo productos */
+
+.imgProductos{
+    @include size(auto,30rem);
+    margin-top: 1rem;
+}
+
+.productosHDos{
+    @include text (1.5rem,'Dancing Script');
+    @include transform (underline,capitalize);
+    @extend %flexCenter
+}
+
+.imgBrillo, .imgDelineador ,.imgRubor{
+    @extend %flexCenter;
+}
+
+.productosHDos{
+    text-decoration: underline;
+    @include text(2.2rem,'Roboto Condensed' 'sans-serif');
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.textBrillo, .textPUno, .textRubor, .textP{
+    @include text(1.2rem,'Raleway' 'sans-serif');
+    @include space(0.5rem,0.5rem);
+}
+

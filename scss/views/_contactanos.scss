@@ -1,0 +1,37 @@
+/* Grid contactanos */
+
+.hDos{
+    @include text(2rem,'Dancing Script');
+    @include space(0.5rem,0.5rem);
+    text-decoration: underline;
+    text-align: center;
+}
+
+.pConsul{
+    @include text(2rem,Reboto);
+    @include space(0.5rem,0.5rem);
+    text-align: center;
+}
+
+.estiloF{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.formPar{
+    @include text(1.2rem,cursive);
+    text-transform: capitalize;
+    margin: 0.5rem;
+}
+
+.consultaF{
+    @include size(50rem,8rem);
+    margin: 0.5rem;
+}
+
+.botonContac{
+    background-color: #362a89;
+    color: #F6F3FF;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}

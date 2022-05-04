@@ -1,0 +1,27 @@
+/* Grid conocenos */
+
+.imgTrabajo, .imgLugar{
+    @extend %flexCenter
+}
+
+.imgEquipoUno, .imgEquipoDos{
+    height: 45rem;
+    margin: 2rem;
+}
+
+.meinHDos, .meinHTres{
+    text-align: center;
+    @include text(2.8rem,'Dancing Script');
+    @include transform(underline,capitalize);
+    margin: 0.5rem;
+}
+
+.meinP, .meinPDos{
+    text-align: center;
+    @include text(1.2rem,'Reboto' cursive);
+    @include space(1rem,0.5rem);
+}
+
+.horarios{
+    margin: 0.4rem;
+}

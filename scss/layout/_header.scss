@@ -1,0 +1,45 @@
+
+
+body{
+    background-color: #FFE0B5;
+    font-family: 'Courgette';
+
+    header{
+        height: 45rem;
+        background-image: url(../img/nuevaportada.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-around;
+        align-items: initial;
+
+        h1{
+            color: #020122;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        nav{
+
+            ul{
+                display: flex;
+
+                li{
+                    list-style: none;
+                    margin: 0.5rem;
+                    padding: 1rem;
+                    font-size: 1.5rem;
+                    text-decoration: underline;
+
+                    a{
+                        color: #020122;
+                        text-decoration: none;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+
+}

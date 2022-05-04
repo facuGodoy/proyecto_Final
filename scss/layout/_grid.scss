@@ -1,0 +1,214 @@
+//grid home
+
+.mainProyecto{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "productos"
+                         "p1 p1"
+                         "botonUno botonUno"
+                         "somos"
+                         "p2 p2"
+                         "botonDos botonDos"
+                         "servicios"
+                         "cardUno"
+                         "diseño"
+                         "cardDos"
+                         "p5 p5"
+                         "cardTres"
+                         "horarios redes"
+                         "footer footer";
+}
+
+.productos{
+    grid-area: productos;
+    text-align: center;
+}
+
+.p1{
+    grid-area: p1;
+    text-align: center;
+}
+
+.botonUno{
+    grid-area: botonUno;
+    text-align: center;
+}
+
+.somos{
+    grid-area: somos;
+    text-align: center;
+}
+
+.p2{
+    grid-area: p2;
+    text-align: center;
+}
+
+.botonDos{
+    grid-area: botonDos;
+    text-align: center;
+}
+
+.servicios{
+    grid-area: servicios;
+    text-align: center;
+}
+
+.p3{
+    grid-area: p3;
+    text-align: center;
+}
+
+.imgUno{
+    grid-area: imgUno;
+    align-content: center;
+}
+
+.diseño{
+    grid-area: diseño;
+    text-align: center;
+}
+
+.cardDos{
+    grid-area: cardDos;
+}
+
+.p5{
+    grid-area: p5;
+    text-align: center;
+}
+
+.cardTres{
+    grid-area: cardTres;
+}
+
+/* grid Productos */
+
+.mainProductos{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "productosHDos"
+                         "textoPUno textoPUno"
+                         "imgDelineador imgDelineador"
+                         "textP textP"
+                         "imgRubor imgRubor"
+                         "textRubor textRubor"
+                         "imgBrillo imgBrillo"
+                         "textBrillo textBrillo";
+}
+
+.productosHDos{
+    grid-area: productosHDos;
+    text-align: center;
+}
+
+.textPUno{
+    grid-area: textPUno;
+    text-align: center;
+}
+
+.imgDelineador{
+    grid-area: imgDelineador;
+}
+
+.textP{
+    grid-area: textP;
+    text-align: center;
+}
+
+.imgRubor{
+    grid-area: imgRubor;
+}
+
+.textRubor{
+    grid-area: textRubor;
+    text-align: center;
+}
+
+.imgBrillo{
+    grid-area: imgBrillo;
+}
+
+.textBrillo{
+    grid-area: textBrillo;
+    text-align: center;
+}
+
+/* grid Conocenos */
+
+.mainConocenos{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "meinHDos"
+                         "meinP meinP"
+                         "imgTrabajo"
+                         "meinHTres meinHTres"
+                         "meinP mainP"
+                         "imgLugar"
+                         "horarios";
+}
+
+
+/* grid Contactanos */
+
+.contactanos{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "hDos"
+                         "pConsul pConsul"
+                         "formulario";
+}
+
+
+/* grid Galeria */ 
+
+.mainGaleria{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "galeria"
+                         "galeriaP galeriaP"
+                         "galeriaUno"
+                         "galeriaDos"
+                         "galeriaTres";
+    
+}
+
+.galeria{
+    grid-area: galeria;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Dancing Script';
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.galeriaP{
+    grid-area: galeriaP;
+    text-align: center;
+    @include text(1.2rem,'Reboto' cursive);
+}
+
+.galeriaUno{
+    grid-area: galeriaUno;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+
+}
+
+.galeriaDos{
+    grid-area: galeriaDos;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.galeriaTres{
+    grid-area: galeriaTres;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+

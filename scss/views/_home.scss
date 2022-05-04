@@ -1,0 +1,129 @@
+
+/* trasformasiones del index */
+
+
+.estiloMenu:hover{
+    color: #848586;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.botonUno, .botonDos{
+    width: 35%;
+    background-color: brown;
+    border-radius: 1.2rem;
+    border: 0.8rem 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.boton_1, .boton_2{
+    text-decoration: none;
+    text-transform: none;
+    color: #fff8f0;
+}
+
+.botonUno:hover{
+    transform:scale(1.2);
+    transition: 1.5s;
+    background-color: #d05353;
+    text-decoration: none;
+}
+
+.botonDos:hover{
+    transform:scale(1.2);
+    transition: 1.3s;
+    background-color: #d05353;
+    text-decoration: none;
+}
+
+
+/* estilo redes */
+
+.redesEstilo{
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 1rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+/* estilos parrafos */
+
+.estilosP, .productos, .somos, .servicios, .diseño, .p5{
+    text-align: center;
+    margin: 1rem;
+    font-size: map-get($font-size, normal);
+    font-family: 'Dancing Script';
+    text-decoration: underline;
+}
+
+.estiloPDos, .p2, .p1{
+    color: #000;
+    margin: 1rem;
+    text-align: center;
+    @include transform(none,none);
+    @include text(1.1rem,'Relawey');
+}
+
+/* Estilo horarios */ 
+
+.horarios{
+    background-color: nth($colores , 4);
+    font-size: map-get($font-size, small );
+    color: $colorSecundario;
+    padding: 0.5rem;
+}
+
+.horarios{
+    ul {
+        li{
+            font-size: medium;
+            font-family: cursive;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+/* Estilo mapa */
+
+.map{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Estilos de redes */
+
+.imgRedes{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.redes{
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+
+.botonEstilo{
+    background-color: transparent;
+    padding: 0.3rem;
+    border: 0.1rem;
+
+}
+
+.redesSociales{
+    color: $colorPrincipal;
+    @include text (1.2rem ,cursive);
+    @include transform (none , capitalize);
+    text-align: center;
+}

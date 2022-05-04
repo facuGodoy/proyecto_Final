@@ -1,0 +1,11 @@
+
+/* estilo footer */
+
+footer{
+    display: flex;
+    justify-content: end;
+}
+
+.diseñoF{
+    @include text(0.8rem,cursive);
+}

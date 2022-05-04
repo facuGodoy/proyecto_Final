@@ -1,0 +1,16 @@
+
+/* estilo cartas */
+
+.estiloCard{
+    background-color: darkseagreen;
+}
+
+.cartas{
+    margin: 2rem;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    transition: 3s;
+}
+

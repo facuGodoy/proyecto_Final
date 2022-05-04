@@ -1,20 +1,22 @@
 @charset "UTF-8";
-.productosHDos, .imgBrillo, .imgDelineador, .imgRubor, .imgTrabajo, .imgLugar {
-  display: flex;
-  justify-content: center; }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+.productosHDos, .imgBrillo, .imgDelineador, .imgRubor, .imgTrabajo, .imgLugar {
+  display: flex;
+  justify-content: center; }
+
 body {
-  background-color: #eed2ae;
+  background-color: #FFE0B5;
   font-family: 'Courgette'; }
   body header {
     height: 45rem;
     background-image: url(../img/nuevaportada.png);
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
     align-items: initial; }
@@ -22,40 +24,55 @@ body {
       color: #020122;
       text-align: center;
       text-transform: capitalize; }
-    body header nav {
-      display: flex;
-      justify-content: space-around; }
-      body header nav ul {
-        display: flex; }
-        body header nav ul li {
-          list-style: none;
-          margin: 0.5rem;
-          padding: 1rem;
-          font-size: 1.5rem;
-          text-decoration: underline; }
-          body header nav ul li a {
-            color: #020122;
-            text-decoration: none;
-            text-transform: none; }
-
-body footer {
-  display: flex;
-  justify-content: end; }
+    body header nav ul {
+      display: flex; }
+      body header nav ul li {
+        list-style: none;
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-decoration: underline; }
+        body header nav ul li a {
+          color: #020122;
+          text-decoration: none;
+          text-transform: none; }
 
 /* trasformasiones del index */
 .estiloMenu:hover {
   color: #848586; }
 
-.boton:hover {
-  transform: scale(1.3);
-  transition: 1s;
-  color: black;
-  background-color: #DBC7B8;
-  border: 0.1rem solid black; }
+.boton {
+  display: flex;
+  justify-content: center; }
 
-.card:hover {
-  transform: scale(1.3);
-  transition: 3s; }
+.botonUno, .botonDos {
+  width: 35%;
+  background-color: brown;
+  border-radius: 1.2rem;
+  border: 0.8rem 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-transform: capitalize; }
+
+.boton_1, .boton_2 {
+  text-decoration: none;
+  text-transform: none;
+  color: #fff8f0; }
+
+.botonUno:hover {
+  transform: scale(1.2);
+  transition: 1.5s;
+  background-color: #d05353;
+  text-decoration: none; }
+
+.botonDos:hover {
+  transform: scale(1.2);
+  transition: 1.3s;
+  background-color: #d05353;
+  text-decoration: none; }
 
 /* estilo redes */
 .redesEstilo {
@@ -66,62 +83,59 @@ body footer {
   letter-spacing: 0.1rem; }
 
 /* estilos parrafos */
-.estilosP {
+.estilosP, .productos, .somos, .servicios, .diseño, .p5 {
   text-align: center;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: 'Dancing Script';
   text-decoration: underline; }
 
-.estiloPDos {
-  color: #5d5a5a;
+.estiloPDos, .p2, .p1 {
+  color: #000;
   margin: 1rem;
   text-align: center;
   text-decoration: none;
   text-transform: none;
   font-size: 1.1rem;
-  font-family: Reboto cursive; }
-
-/* estilo cartas */
-.estiloCard {
-  background-color: darkseagreen; }
-
-.cartas {
-  margin: 2rem; }
+  font-family: "Relawey"; }
 
 /* Estilo horarios */
 .horarios {
   background-color: darkred;
   font-size: 1rem;
-  color: whitesmoke; }
+  color: whitesmoke;
+  padding: 0.5rem; }
+
+.horarios ul li {
+  font-size: medium;
+  font-family: cursive;
+  text-transform: capitalize; }
 
 /* Estilo mapa */
 .map {
   margin-top: 5rem;
   margin-bottom: 1rem; }
 
-/* estilo footer */
-footer {
-  display: flex;
-  justify-content: end; }
-
 /* Estilos de redes */
+.imgRedes {
+  height: 3.5rem;
+  width: 3.5rem; }
+
 .redes {
   display: flex;
   justify-content: space-evenly; }
 
 .botonEstilo {
-  background-color: pink;
+  background-color: transparent;
   padding: 0.3rem;
-  border-radius: 1rem;
-  border: 0.1rem solid black; }
+  border: 0.1rem; }
 
 .redesSociales {
   color: black;
-  font-size: 1rem;
-  font-family: "Times New Roman";
+  font-size: 1.2rem;
+  font-family: cursive;
   text-decoration: none;
-  text-transform: none;
+  text-transform: capitalize;
   text-align: center; }
 
 /* Estilo productos */
@@ -132,14 +146,13 @@ footer {
 
 .productosHDos {
   font-size: 1.5rem;
-  font-family: cursive;
+  font-family: "Dancing Script";
   text-decoration: underline;
   text-transform: capitalize; }
 
-/* Grid productos */
 .productosHDos {
   text-decoration: underline;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-family: "Roboto Condensed" "sans-serif";
   margin: 0.5rem;
   padding: 0.5rem; }
@@ -150,77 +163,33 @@ footer {
   margin: 0.5rem;
   padding: 0.5rem; }
 
-.meinProductos {
-  height: 80vh;
-  display: grid;
-  grid-template-areas: "productosHDos" "textoPUno textoPUno" "imgDelineador imgDelineador" "textP textP" "imgRubor imgRubor" "textRubor textRubor" "imgBrillo imgBrillo" "textBrillo textBrillo"; }
-
-.productosHDos {
-  grid-area: productosHDos;
-  text-align: center; }
-
-.textPUno {
-  grid-area: textPUno;
-  text-align: center; }
-
-.imgDelineador {
-  grid-area: imgDelineador; }
-
-.textP {
-  grid-area: textP;
-  text-align: center; }
-
-.imgRubor {
-  grid-area: imgRubor; }
-
-.textRubor {
-  grid-area: textRubor;
-  text-align: center; }
-
-.imgBrillo {
-  grid-area: imgBrillo; }
-
-.textBrillo {
-  grid-area: textBrillo;
-  text-align: center; }
-
 /* Grid conocenos */
-.mainConocenos {
-  height: 80vh;
-  display: grid;
-  grid-template-areas: "meinHDos" "meinP meinP" "imgTrabajo" "meinHTres meinHTres" "meinP mainP" "imgLugar" "horarios"; }
-
 .imgEquipoUno, .imgEquipoDos {
   height: 45rem;
   margin: 2rem; }
 
 .meinHDos, .meinHTres {
   text-align: center;
-  font-size: 2rem;
-  font-family: cursive;
+  font-size: 2.8rem;
+  font-family: "Dancing Script";
   text-decoration: underline;
   text-transform: capitalize;
   margin: 0.5rem; }
 
-.meinP {
+.meinP, .meinPDos {
   text-align: center;
   font-size: 1.2rem;
-  font-family: Reboto cursive;
-  margin: 0.5rem;
+  font-family: "Reboto" cursive;
+  margin: 1rem;
   padding: 0.5rem; }
 
 .horarios {
   margin: 0.4rem; }
 
 /* Grid contactanos */
-.contactanos {
-  height: 80vh;
-  display: grid;
-  grid-template-areas: "hDos" "pConsul pConsul" "formulario"; }
-
 .hDos {
   font-size: 2rem;
-  font-family: cursive;
+  font-family: "Dancing Script";
   margin: 0.5rem;
   padding: 0.5rem;
   text-decoration: underline;
@@ -255,6 +224,186 @@ footer {
   padding: 0.2rem; }
 
 /* Grid de galeria */
+.diseñoImg {
+  height: 30rem;
+  margin: 0.5rem 0.5rem; }
+
+/* estilo cartas */
+.estiloCard {
+  background-color: darkseagreen; }
+
+.cartas {
+  margin: 2rem; }
+
+.card:hover {
+  transform: scale(1.2);
+  transition: 3s; }
+
+/* estilo footer */
+footer {
+  display: flex;
+  justify-content: end; }
+
+.diseñoF {
+  font-size: 0.8rem;
+  font-family: cursive; }
+
+/* MediaQ tablet */
+@media only screen and (max-width: 1024px) {
+  .mainProyecto {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "productos" "p1 p1" "botonUno botonUno" "somos" "p2 p2" "botonDos botonDos" "servicios" "cardUno" "diseño" "cardDos" "horarios redes"; }
+  .cardTres, .p5 {
+    display: none; }
+  .mainProductos {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "productosHDos" "textoPUno textoPUno" "textP textP" "imgDelineador imgDelineador" "textRubor textRubor" "imgRubor imgRubor"; }
+  .textBrillo, .imgBrillo {
+    display: none; }
+  /* MediaQ Conocenos y Contactanos permanecen iguales */
+  .mainGaleria {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "galeria" "galeriaP galeriaP" "galeriaUno" "galeriaDos"; }
+  .galeriaTres, .diseñoTres {
+    display: none; } }
+
+/* MediaQ mobile */
+@media only screen and (max-width: 600px) {
+  .mainProyecto {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "productos" "p1 p1" "botonUno botonUno" "somos" "p2 p2" "botonDos botonDos" "servicios" "cardUno" "horarios redes"; }
+  .cardTres, .cardDos, .p5, .diseño {
+    display: none; }
+  /* MediaQ mobile productos */
+  .mainProductos {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "productosHDos" "textoPUno textoPUno" "textP textP" "imgDelineador imgDelineador"; }
+  .textBrillo, .imgBrillo, .textRubor, .imgRubor {
+    display: none; }
+  /* MediaQ Contactanos siguen iguales */
+  /* MediaQ mobile Conocenos */
+  .mainConocenos {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "meinHTres" "meinP meinP" "imgLugar imgLugar"; }
+  .meinHDos, .meinP, .imgTrabajo {
+    display: none; }
+  /* MediaQ galeria */
+  .mainGaleria {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "galeria" "galeriaP galeriaP" "galeriaUno" "galeriaDos"; }
+  .diseñoTres, .diseñoDos {
+    display: none; } }
+
+.mainProyecto {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "productos" "p1 p1" "botonUno botonUno" "somos" "p2 p2" "botonDos botonDos" "servicios" "cardUno" "diseño" "cardDos" "p5 p5" "cardTres" "horarios redes" "footer footer"; }
+
+.productos {
+  grid-area: productos;
+  text-align: center; }
+
+.p1 {
+  grid-area: p1;
+  text-align: center; }
+
+.botonUno {
+  grid-area: botonUno;
+  text-align: center; }
+
+.somos {
+  grid-area: somos;
+  text-align: center; }
+
+.p2 {
+  grid-area: p2;
+  text-align: center; }
+
+.botonDos {
+  grid-area: botonDos;
+  text-align: center; }
+
+.servicios {
+  grid-area: servicios;
+  text-align: center; }
+
+.p3 {
+  grid-area: p3;
+  text-align: center; }
+
+.imgUno {
+  grid-area: imgUno;
+  align-content: center; }
+
+.diseño {
+  grid-area: diseño;
+  text-align: center; }
+
+.cardDos {
+  grid-area: cardDos; }
+
+.p5 {
+  grid-area: p5;
+  text-align: center; }
+
+.cardTres {
+  grid-area: cardTres; }
+
+/* grid Productos */
+.mainProductos {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "productosHDos" "textoPUno textoPUno" "imgDelineador imgDelineador" "textP textP" "imgRubor imgRubor" "textRubor textRubor" "imgBrillo imgBrillo" "textBrillo textBrillo"; }
+
+.productosHDos {
+  grid-area: productosHDos;
+  text-align: center; }
+
+.textPUno {
+  grid-area: textPUno;
+  text-align: center; }
+
+.imgDelineador {
+  grid-area: imgDelineador; }
+
+.textP {
+  grid-area: textP;
+  text-align: center; }
+
+.imgRubor {
+  grid-area: imgRubor; }
+
+.textRubor {
+  grid-area: textRubor;
+  text-align: center; }
+
+.imgBrillo {
+  grid-area: imgBrillo; }
+
+.textBrillo {
+  grid-area: textBrillo;
+  text-align: center; }
+
+/* grid Conocenos */
+.mainConocenos {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "meinHDos" "meinP meinP" "imgTrabajo" "meinHTres meinHTres" "meinP mainP" "imgLugar" "horarios"; }
+
+/* grid Contactanos */
+.contactanos {
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "hDos" "pConsul pConsul" "formulario"; }
+
+/* grid Galeria */
 .mainGaleria {
   height: 80vh;
   display: grid;
@@ -264,7 +413,7 @@ footer {
   grid-area: galeria;
   text-align: center;
   font-size: 2rem;
-  font-family: cursive;
+  font-family: 'Dancing Script';
   text-decoration: underline;
   text-transform: capitalize;
   margin: 0.5rem;
@@ -274,25 +423,22 @@ footer {
   grid-area: galeriaP;
   text-align: center;
   font-size: 1.2rem;
-  font-family: Reboto cursive; }
+  font-family: "Reboto" cursive; }
 
 .galeriaUno {
   grid-area: galeriaUno;
   display: flex;
-  padding: 5px; }
+  justify-content: center;
+  padding: 0.5rem; }
 
 .galeriaDos {
   grid-area: galeriaDos;
   display: flex;
-  padding: 5px; }
+  justify-content: center;
+  padding: 0.5rem; }
 
 .galeriaTres {
   grid-area: galeriaTres;
   display: flex;
-  padding: 5px; }
-
-.diseñoImg {
-  height: 30rem; }
-
-.diseño {
-  flex: 30%; }
+  justify-content: center;
+  padding: 0.5rem; }
