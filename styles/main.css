@@ -301,6 +301,7 @@ footer {
   .diseñoTres, .diseñoDos {
     display: none; } }
 
+/* Grid index */
 .mainProyecto {
   height: 80vh;
   display: grid;
