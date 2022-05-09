@@ -43,3 +43,20 @@ body{
     }
 
 }
+
+.logo{
+    display:inline-flex;
+}
+
+.logoA{
+    justify-content: start;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.menuLi:hover:not(.estiloMenu){
+    background-color: #f5cac3;
+    border-radius: 5rem;
+}
