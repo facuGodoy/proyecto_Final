@@ -33,6 +33,7 @@ body {
         font-size: 1.5rem;
         text-decoration: underline; }
         body header nav ul li a {
+          display: block;
           color: #020122;
           text-decoration: none;
           text-transform: none; }
@@ -49,7 +50,16 @@ body {
 
 .menuLi:hover:not(.estiloMenu) {
   background-color: #f5cac3;
-  border-radius: 5rem; }
+  border-radius: 5rem;
+  transition: .4s; }
+
+/* Diseño del boton de menu de menos de 600px */
+.navInput, .navLabel {
+  display: none; }
+
+.botonD {
+  width: 5rem;
+  height: 5rem; }
 
 /* trasformasiones del index */
 .estiloMenu:hover {
@@ -286,6 +296,24 @@ footer {
 
 /* MediaQ mobile */
 @media only screen and (max-width: 600px) {
+  .navLabel {
+    display: block;
+    cursor: pointer; }
+  .navMenu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-phat 1s ease-in-out; }
+  .navInput:checked + .navMenu {
+    clip-path: circle(100% at center);
+    background: #f9dcc4; }
   .mainProyecto {
     height: 80vh;
     display: grid;

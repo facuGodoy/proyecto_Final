@@ -33,6 +33,7 @@ body{
                     text-decoration: underline;
 
                     a{
+                        display: block;
                         color: #020122;
                         text-decoration: none;
                         text-transform: none;
@@ -59,4 +60,16 @@ body{
 .menuLi:hover:not(.estiloMenu){
     background-color: #f5cac3;
     border-radius: 5rem;
+    transition: .4s;
+}
+
+/* Diseño del boton de menu de menos de 600px */
+
+.navInput, .navLabel{
+    display: none;
+}
+
+.botonD{
+    width: 5rem;
+    height: 5rem;
 }

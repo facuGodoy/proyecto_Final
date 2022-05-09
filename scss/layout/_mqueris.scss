@@ -56,6 +56,31 @@
 /* MediaQ mobile */
 
 @media only screen and (max-width: 600px){
+    .navLabel{
+        display: block;
+        cursor: pointer;
+    }
+    .navMenu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-phat 1s ease-in-out;
+    }
+
+    .navInput:checked + .navMenu{
+        clip-path: circle(100% at center);
+        background: #f9dcc4 ;
+    }
+
+
+
     .mainProyecto{
         height: 80vh;
         display: grid;
